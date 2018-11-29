@@ -25,4 +25,4 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 // export default SearchContainer;
-export default connect(mapStateToProps,mapDispatchToProps)(VideoPlayerContainer);
+export default connect(mapStateToProps,mapDispatchToProps)(VideoPlayer);

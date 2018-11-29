@@ -28,6 +28,6 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 // export default SearchContainer;
-export default connect(mapStateToProps,mapDispatchToProps)(VideoListContainer);
+export default connect(mapStateToProps,mapDispatchToProps)(VideoList);
 //does connect() return a function definition and then call SearchC as an input? -question
 // export default VideoListContainer;

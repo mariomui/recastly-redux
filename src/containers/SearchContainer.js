@@ -31,5 +31,5 @@ const mapDispatchToProps = (dispatch) => {
 //state and dispatch mappings.
 
 // export default SearchContainer;
-export default connect(mapStateToProps,mapDispatchToProps)(SearchContainer);
+export default connect(mapStateToProps,mapDispatchToProps)(Search);
 //does connect() return a function definition and then call SearchC as an input? -question
