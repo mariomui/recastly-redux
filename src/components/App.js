@@ -47,7 +47,7 @@ export default class App extends React.Component {
   //TODO: swap out the React components below for the container components
   //  you wrote in the 'containers' directory.
   render() {
-    <Provider store={store}></Provider>
+    // <Provider store={store}></Provider>
 
     return (
       <div>
