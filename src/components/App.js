@@ -8,10 +8,13 @@ import changeVideo from '../actions/currentVideo.js';
 import changeVideoList from '../actions/videoList.js';
 import exampleVideoData from '../data/exampleVideoData.js';
 import store from '../store/store.js';
+import { Provider } from 'react-redux';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
+
+    this.store = store();
 
     this.state = {
       videos: [],
@@ -44,6 +47,8 @@ export default class App extends React.Component {
   //TODO: swap out the React components below for the container components
   //  you wrote in the 'containers' directory.
   render() {
+    <Provider store={store}></Provider>
+
     return (
       <div>
         <Nav handleSearchInputChange={this.getYouTubeVideos.bind(this)}/>
