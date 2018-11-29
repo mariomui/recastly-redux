@@ -3,6 +3,5 @@ import thunk from 'redux-thunk';
 import rootReducer from './../reducers/main.js';
 
 var store = createStore(rootReducer, applyMiddleware(thunk));
-//what does applyMiddleWare return?
 
 export default store;

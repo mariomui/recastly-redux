@@ -49,6 +49,7 @@ describe('containers', function() {
     });
     it('should have a prop called videos connected to the videoList in the store', function() {
       expect(component.prop('videos')).to.be.an('array');
+      debugger;
       expect(component.prop('videos')).to.deep.equal([{script: 'but only when they\'re green.'}]);
     });
     it('should be created using the React-Redux connect method', function() {
