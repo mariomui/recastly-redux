@@ -7,10 +7,11 @@ var VideoPlayerContainer = () => {};
 //dispatchers with your VideoPlayer component props.
 
 const mapStateToProps = (state) => {
-    return ({
-        video: state.videos,
-        videoList: state.videoList
-    });
+    console.log(state,'vpc');
+    return {
+        video: state.currentVideo,
+        // videoList: state.videoList
+    };
 }
 const mapDispatchToProps = (dispatch) => {
     // console.log('current state: ', store.getState());
