@@ -7,14 +7,14 @@ import VideoList from './VideoList.js';
 import changeVideo from '../actions/currentVideo.js';
 import changeVideoList from '../actions/videoList.js';
 import exampleVideoData from '../data/exampleVideoData.js';
-import store from '../store/store.js';
-import { Provider } from 'react-redux';
+// import store from '../store/store.js';
+// import { Provider } from 'react-redux';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.store = store();
+    // this.store = store();
 
     this.state = {
       videos: [],
